@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Kid Safe Mode</string>
+    <string name="sms_text_header">Register a Keyword and a set of Actions from below list. Whenever a message with registered Keyword is received from any of the parents mobile number, all the actions registered with that keyword will be executed</string>
+    <string name="settings_sub_title">Settings</string>
+    <string name="sms_actions">Sms Actions</string>
+    <string name="timer_actions">Timer Actions</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="permissions_title">Permissions</string>
+    <string name="locktext"><b>Lock</b> - Screen will be Locked when a message \'Lock\' is received</string>
+    <string name="kidmodetext"><b>Kidmode</b> - Selected settings in Sms Actions will be done when a message \'Kidmode\' is received</string>
+    <string name="smspolicytext"><i>Click here to read Sms Policy</i></string>
+    <string name="smsactionsheader"><i><b>Note:</b> Sms messages will be considered only from Registered Mobile Numbers. Click here to Add/Update</i></string>
+    <string name="PermissionsRequired"><b>Permissions Required</b></string>
+    <string name="ContactsRequired"><b>Register Contacts</b></string>
+    <string name="sharingIntentText">Kid Safe Mode(Parental Control)\n\n
+                                     Do you want to keep your Infants and Toddlers safe from the Smart Phones?\n
+                                     Do you want to make them leave the Smart Phones without making them cry ?\n
+                                     Tryout this Free application></string>
+    <string name="SmspolicyTextHeader">Sms Policy</string>
+    <string name="SmsPolicy">
+        1. Sms messages will be read only when Receive and Read Sms Permission is given by the user\n\n
+        2. Only Sms messages received from registered mobile number(s) will be read\n   All other messages will be ignored\n\n
+        3. Sms Actions will work only if the message content is equal to "Lock" or "Kidmode"(both are case-insensitive). All other messages will be ignored\n\n
+        4. Sms messages are not stored anywhere. No message is sent to the cloud (This app doesn\'t have internet access)\n\n
+        5. Screen Lock will happen only when Lock Action is enabled in "Sms Actions"\n   Enabling it requires ReadSms and Device Admin Permission to Lock the Screen\n\n
+        6. Screen Lock will happen when an Sms \'Lock\'(case-insensitive) is received from any of the registered mobile numbers.\n\n      Screen Lock will happen 10 seconds after receiving the Sms\n\n
+        7. Kid Safe Mode Settings will be executed only when it is enabled in "Sms Actions"\n   Enabling it requires ReadSms Permission\n\n
+        8. Kid Safe Mode settings will be executed only when an Sms \'kidmode\'(case-insensitive) is received from any of the registered mobile numbers.\n\n    Kid Safe Mode settings will be executed 10 seconds after receiving the Sms\n\n
+        9. Additional \'Modify System Settins\' permission is required to enable \'Turn Off Screen\' and \'Brightness\' options\n\n\n
+    </string>
+
+    <string name="TurnOffScreen">Turn Off Screen</string>
+    <string name="MinimizeAllApps">Minimize All Apps</string>
+    <string name="LockTheScreen">Lock the Screen</string>
+    <string name="TurnOffWifi">Turn Off Wi-Fi</string>
+    <string name="TurnOnSilentMode">Turn On Silent Mode</string>
+    <string name="MediaVolume">Media Volume</string>
+    <string name="Brightness">Brightness</string>
+    <string name="Rating">Give Rating</string>
+    <string name="RatingText">*This app is for a Good Cause. Please give your rating</string>
+</resources>

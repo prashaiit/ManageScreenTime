@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorbackground">#FFFFFF</color>
+    <color name="colorforeground">#000000</color>
+    <color name="mediavolumegreen">#00FF00</color>
+    <color name="mediavolumered">#FF0000</color>
+    <color name="textdisabled">#808080</color>
+    <color name="tilebackground">#4267b2</color>
+    <color name="tilebackgrounddisabled">#426780</color>
+    <color name="tileforeground">#FFFFFF</color>
+    <color name="tiletheme1">#7474E7</color>
+    <color name="tiletheme2">#42a5f5</color>
+    <color name="tiletheme3">#1fbed6</color>
+    <color name="tiletheme4_fbblue">#4267b2</color>
+    <color name="tilepinktheme">#9e5097</color>
+</resources>

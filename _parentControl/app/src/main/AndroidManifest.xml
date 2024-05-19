@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.praskum.parentcontrol">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>-->
+   <!--  <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kes_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/kes_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TimerActionActivity" android:screenOrientation="portrait"/>
+        <!--<activity android:name=".SmsPolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SmsActionList" android:screenOrientation="portrait"/>-->
+        <activity android:name=".PermissionActivity" android:screenOrientation="portrait"/>
+        <receiver android:name=".AlarmReceiver" android:enabled="true"/>
+        <!--<receiver android:name=".SmsListener" android:enabled="true" android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>-->
+
+        <receiver
+            android:name=".Admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
